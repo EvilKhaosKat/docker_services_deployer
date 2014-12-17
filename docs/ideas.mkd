@@ -1,0 +1,9 @@
+###Assumptions
+* there are several different micro-services types
+* ? every one has REST api/awaits for JSON input data for working
+* returns json-answer after ending of it's work
+* DB is permanent, and located on other machine _or_ support linking with link to DB updating
+* results will be uploaded to DB
+* after work finishing instance should be stopped
+* flask framework and tornado web server
+* sereral physical machines with docker daemon
