@@ -1,4 +1,4 @@
-###Assumptions
+### Assumptions:
 * there are several different micro-services types
 * ? every one has REST api/awaits for JSON input data for working
 * returns json-answer after ending of it's work
@@ -7,3 +7,23 @@
 * after work finishing instance should be stopped
 * flask framework and tornado web server
 * sereral physical machines with docker daemon
+
+
+### Features/Pure functional:
+* tasks queue
+    * task type
+    * input data
+* list of machines for using
+* checking machine statuses and it's loading
+    * information as is
+    * as realtime available "report" on "dashboard"
+* choosing optimal machine for task execution
+* maching starting 
+* execution-result analyzer
+* machine stopping
+* 'Machine' entity
+    * remote docker connection
+    * 'machine' name/alias
+    * 'machine' connection params
+* logging of all events
+* ? simple console/web interface of tasks adding and status info gathering
