@@ -27,3 +27,11 @@
     * 'machine' connection params
 * logging of all events
 * ? simple console/web interface of tasks adding and status info gathering
+* One queue message - whole working, or separate messages by types:
+    * initial task message
+    * launch concrete server and give to it data for starting
+    * shut down server
+
+### Technologies:
+* ? queue/task management - celery or python-rq (remember about tasks timeout - container starting can require some time)
+
