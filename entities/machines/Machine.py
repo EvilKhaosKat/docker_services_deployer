@@ -21,5 +21,12 @@ class Machine:
         self.name = name
 
     def __str__(self):
-        return "Machine(name:{name}; base_url:{base_url})".format(name=self.name, base_url=self.base_url)
+        return "Machine(name={name}, base_url={base_url})".format(name=self.name, base_url=self.base_url)
+
+    def __repr__(self):
+        return str(self)
+
+    def __eq__(self, other):
+        return self.base_url == other.base_url
+
 
